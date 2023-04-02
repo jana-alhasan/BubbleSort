@@ -5,11 +5,11 @@ This is a web-based visualization of the bubble sort algorithm, created using HT
 
 ## How to use
 
-1- Enter the length of the array of random integers to be sorted.
-2- Click the "Randomize" button to generate a new array.
-3- Click the "Solve" button to start the bubble sort algorithm.
-4- Observe the visualization of the sorting process.
-5- Once the sorting is complete, the final sorted array will be displayed.
+1. Enter the length of the array of random integers to be sorted.
+2. Click the "Randomize" button to generate a new array.
+3. Click the "Solve" button to start the bubble sort algorithm.
+4. Observe the visualization of the sorting process.
+5. Once the sorting is complete, the final sorted array will be displayed.
 
 ## Features
 
