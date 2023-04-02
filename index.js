@@ -19,7 +19,7 @@ function randomizeArray() {
     alert('Array length must be between 1 and 100.');
     return;
   }
-  for (let i = 0; i < length-1 ; i++) {
+  for (let i = 0; i < length ; i++) {
     const value = randomInt(1, 100);
     array.push(value);
 
