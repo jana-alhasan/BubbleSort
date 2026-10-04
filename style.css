@@ -11,17 +11,6 @@
   position: relative;
 }
 
-.bars-container::before {
-  content: "";
-  display: block;
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background-color: #f2f2f2;
-}
-
 .bar {
   position: relative;
   background-color: #0072c6;
@@ -61,6 +50,11 @@ button {
   padding: 0.5rem 1rem;
 }
 
+button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
 input[type=number] {
   font-size: 1.5rem;
   margin-right: 1rem;
@@ -76,4 +70,30 @@ input[type=number] {
   font-size: 12px;
   text-align: center;
   font-weight: bold;
+}
+
+@media (max-width: 600px) {
+  h1 {
+    font-size: 2rem;
+  }
+
+  .buttons {
+    margin: 1rem 0;
+  }
+
+  button,
+  input[type=number] {
+    font-size: 1.1rem;
+    margin: 0.25rem;
+  }
+
+  .bars-container {
+    height: 300px;
+    margin-top: 2rem;
+    padding: 0 8px;
+  }
+
+  .bar .bar-value {
+    font-size: 8px;
+  }
 }
