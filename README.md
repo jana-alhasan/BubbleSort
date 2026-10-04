@@ -1,34 +1,58 @@
+# Bubble Sort Visualizer
 
-# Bubble Sort Visualization
+An interactive web app that visualizes the bubble sort algorithm step by step, built with HTML, CSS, and vanilla JavaScript.
 
-This is a web-based visualization of the bubble sort algorithm, created using HTML, CSS, and JavaScript. Users can enter an array of numbers, and the algorithm will sort the array using the bubble sort method, while providing a step-by-step visualization of the sorting process.
+**[Live Demo](https://jana-alhasan.github.io/BubbleSort/)**
 
-## How to use
 
-1. Enter the length of the array of random integers to be sorted.
-2. Click the "Randomize" button to generate a new array.
-3. Click the "Solve" button to start the bubble sort algorithm.
-4. Observe the visualization of the sorting process.
-5. Once the sorting is complete, the final sorted array will be displayed.
+## How It Works
+
+Each number is shown as a bar whose height matches its value. When you click **Solve**, the app walks through the algorithm one comparison at a time:
+
+- **Pink**: the two bars currently being compared
+- **Orange**: the two bars being swapped
+- **Purple**: bars that are in their final sorted position
 
 ## Features
 
-- Visualization of the bubble sort algorithm.
-- Random array generation.
-- Adjustable array length.
-- Responsive design.
+- Random array generation (values from 1 to 100)
+- Adjustable array length (2 to 100 elements)
+- Adjustable animation speed
+- Color-coded steps for comparing, swapping, and sorted elements
+- Input validation, and controls are disabled while sorting is in progress
+- Early exit when the array is already sorted
+- Layout adapts to smaller screens
 
-## Technologies Used
-- HTML: used for structuring the content and layout of the web page.
-- CSS: used for styling the web page.
-- JavaScript: used for implementing the bubble sort algorithm and updating the user interface in real time.
-- Git: used for version control and collaboration.
-- GitHub Pages: used to host the web application.
+## How to Use
 
-## Getting Started
-To use the application, simply open the index.html file in your web browser.
+1. Enter the array length (between 2 and 100).
+2. Click **Randomize** to generate a new array.
+3. Use the **Speed** slider to set how fast the animation runs.
+4. Click **Solve** and watch the sorting process.
 
-Alternatively, you can visit the live website hosted on GitHub Pages at https://janahasa.github.io/BubbleSort/.
+## Technologies
 
-## Credits
-This tool was created by Jana Alhasan as a personal project for learning and practicing web development skills.
+- HTML5
+- CSS3 (Flexbox, media queries)
+- JavaScript (DOM manipulation, `async`/`await`)
+- GitHub Pages for hosting
+
+## Run Locally
+
+```bash
+git clone https://github.com/jana-alhasan/BubbleSort.git
+cd BubbleSort
+```
+
+Then open `index.html` in your browser. No build step or dependencies are required.
+
+## Possible Improvements
+
+- Add other sorting algorithms (selection sort, insertion sort, merge sort)
+- Keep the array state in JavaScript and render from it, instead of reading values from the DOM
+- Add a pause/resume button
+
+## Author
+
+Jana Hasan
+[LinkedIn](https://www.linkedin.com/in/jana-hasan/) | [GitHub](https://github.com/jana-alhasan)
